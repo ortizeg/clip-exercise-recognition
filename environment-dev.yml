@@ -21,3 +21,4 @@ dependencies:
   - pydantic
   - pylint
   - scikit-image
+  - vim
