@@ -17,7 +17,6 @@ dev: build-dev
 	docker run \
 		--name dev \
 		--net=host \
-		--user "$(id -u):$(id -g)" \
 		-it \
 		-d \
 		--gpus all \
@@ -31,7 +30,6 @@ dev-cpu: build-dev
 	docker run \
 		--name dev \
 		--net=host \
-		--user "$(id -u):$(id -g)" \
 		-it \
 		-d \
 		--rm \
