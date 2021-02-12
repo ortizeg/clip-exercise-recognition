@@ -1,0 +1,23 @@
+name: base
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - black
+  - bokeh
+  - flake8
+  - cudatoolkit=10.1
+  - pytorch
+  - easydict
+  - ffmpeg-python
+  - ipywidgets
+  - jupyterlab
+  - jupyterlab_code_formatter
+  - numpy
+  - opencv
+  - pandas
+  - pip
+  - pydantic
+  - pylint
+  - scikit-image
