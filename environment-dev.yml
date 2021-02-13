@@ -17,7 +17,9 @@ dependencies:
   - numpy
   - opencv
   - pandas
+  - python=3.8
   - pip
+  - pre-commit
   - pydantic
   - pylint
   - scikit-image
