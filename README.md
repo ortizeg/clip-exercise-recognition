@@ -16,7 +16,7 @@ OpenAI, with the release of CLIP, provides the first zero-shot paper that actual
 - First explore what does prediction look like on exercise classification.
 - Explore how exercise classification performs in a video frame by frame as time-series.
 
-2. Build simple, deployable API for others to explore and expan upon.
+2. Build simple, deployable API for others to explore and expand upon.
 
 ## Usage
 
@@ -28,6 +28,14 @@ This workflow is tested on GCP, however it should extend to other cloud provider
 ``` bash
 make serve-cpu
 ```
+
+## Supported Labels
+1. "a person standing"
+2. "a person repeating a squat"
+3. "a person repeating a jumping jack"
+4. "a person performing a plank"
+
+Edit `src/labels.txt` if you want to try other labels in the demo api or edit `texts` variable in the notebook to experiment. Have fun, "prompt engineering" is the new rage :-D.
 
 ## Sample Results
 
