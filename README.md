@@ -1,8 +1,10 @@
 # CLIP Exercise Recognizer
 
-[Colab](https://colab.research.google.com/github/https://github.com/ortizeg/clip-exercise-recognition/blob/main/notebooks/ClipExploration.ipynb) | [Hosted Demo](http://exercise.enriquegortiz.com)
+[Colab](https://colab.research.google.com/github/ortizeg/clip-exercise-recognition/blob/main/notebooks/ClipExploration.ipynb) | [Hosted Demo](http://exercise.enriquegortiz.com)
 
 **Demo will only be up for a couple of months.**
+
+![Burpees!](src/streamlit/assets/burpee.gif)
 
 This repository contains a simple API for performing exercise recognition on still-images using the [OpenAI CLIP model](https://github.com/openai/CLIP). The demo is built using
 - [fastapi](https://github.com/tiangolo/fastapi)
@@ -44,8 +46,6 @@ Edit `src/labels.txt` if you want to try other labels in the demo api or edit `t
 
 ### Jupyter Notebook / Colab
 In the notebook, I have an example working on video where I run the CLIP model frame by frame with a mean smoothing window size of 5.
-
-![Burpees!](src/streamlit/assets/burpee.gif)
 
 ### Streamlit
 
