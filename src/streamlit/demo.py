@@ -13,17 +13,17 @@ headers = {"API-Token": API_KEY}
 st.set_page_config(page_title="Recognize Exercise via CLIP Model")
 st.title("Exercise Recognition")
 st.header("Recognize Exercise in Image")
-st.text(
+st.markdown(
     """
-Here we serve sample results for exercise recognition using OpenAI's zero-shot
-CLIP model. Current supported exercises:
+Here we serve sample results for exercise recognition using [OpenAI's "zero-shot"
+CLIP model](https://github.com/openai/CLIP). Current supported exercises:
 
 1. "a person standing"
 2. "a person repeating a squat"
 3. "a person repeating a jumping jack"
 4. "a person performing a plank"
 
-The goal is to show off the API I used to generate the demos in the gif below.
+The goal is to show off the API used to generate the demos in the gif below.
 """
 )
 
