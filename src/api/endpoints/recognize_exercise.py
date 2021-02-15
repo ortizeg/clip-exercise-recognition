@@ -13,12 +13,9 @@ from src.api.schemas.response import ImageClassifcationResponse, Prediction
 router = fastapi.APIRouter()
 
 # load pre computed text embeddings and labels
-labels = [
-    "a person standing",
-    "a person repeating a squat",
-    "a person repeating a jumping jack",
-    "a person performing a plank",
-]
+with open("src/labels.txt", "r") as f:
+    labels = f.readlines()
+labels = [label.rstrip("\n") for label in labels]
 texts = [f"This is {label}" for label in labels]
 tokenized_text = clip.tokenize(texts).to(device)
 text_features = model.encode_text(tokenized_text).type(torch.float32)
