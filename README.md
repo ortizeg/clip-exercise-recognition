@@ -1,6 +1,6 @@
 # CLIP Exercise Recognizer
 
-[Colab](https://drive.google.com/file/d/1MfJt6TzF_aM29IorJ6hv1jfrKERXIHs4/view?usp=sharing) | [Hosted Demo](http://exercise.enriquegortiz.com)
+[Colab](https://colab.research.google.com/github/https://github.com/ortizeg/clip-exercise-recognition/blob/main/notebooks/ClipExploration.ipynb) | [Hosted Demo](http://exercise.enriquegortiz.com)
 
 **Demo will only be up for a couple of months.**
 
@@ -22,7 +22,10 @@ OpenAI, with the release of CLIP, provides the first zero-shot paper that actual
 
 This workflow is tested on GCP, however it should extend to other cloud providers as it's docker-based. Currently runs in CPU mode, but slight modifications would allow for use with GCP.
 
-1. Install dependencies onto machine, e.g. git, docker, etc.
+1. Install dependencies onto machine, e.g.
+``` bash
+sudo apt-get install git docker build-essentials
+```
 2. Clone repository.
 3. Build demo server.
 ``` bash
@@ -43,6 +46,10 @@ Edit `src/labels.txt` if you want to try other labels in the demo api or edit `t
 In the notebook, I have an example working on video where I run the CLIP model frame by frame with a mean smoothing window size of 5.
 
 ![Burpees!](src/streamlit/assets/burpee.gif)
+
+### Streamlit
+
+![streamlit demo!](src/streamlit/assets/streamlit.gif)
 
 ## References
 1. https://github.com/openai/CLIP
