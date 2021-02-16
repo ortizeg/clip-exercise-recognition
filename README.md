@@ -51,6 +51,11 @@ In the notebook, I have an example working on video where I run the CLIP model f
 
 ![streamlit demo!](src/streamlit/assets/streamlit.gif)
 
+## Future Work
+
+1. Use CLIP image encoder as embedding for image retrieval. Collect a dataset of still images to which new images are matched.
+2. Use CLIP image encoder when learning new tasks as an additional loss acting as a regularizer helping a network learn more generic features.
+
 ## References
 1. https://github.com/openai/CLIP
 2. https://openai.com/blog/clip/
